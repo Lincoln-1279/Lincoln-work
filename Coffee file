@@ -1,0 +1,31 @@
+name: samwel ongori
+ reg: s08-8443-2024
+
+class CoffeeOrder {
+    String size;
+    double price;
+    
+    public CoffeeOrder(String size, double price) {
+        this.size = size;
+        this.price = price;
+    }
+    
+    public void displayOrder() {
+        System.out.println("Coffee Size: " + size);
+        System.out.println("Price: $" + price);
+        System.out.println();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        CoffeeOrder order1 = new CoffeeOrder("Large", 6.89);
+        CoffeeOrder order2 = new CoffeeOrder("Medium", 3.49);
+        
+        System.out.println("Order 1 Details:");
+        order1.displayOrder();
+        
+        System.out.println("Order 2 Details:");
+        order2.displayOrder();
+    }
+}
